@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+
+
+<script>
+var chegadaNoBrasil = 1500, media = 28, anoAtual = 2021, diferencaAnos, geracoes 
+
+function arredondaPraBaixo(numero) {
+   var arredonda = Math.trunc(numero)
+    return arredonda
+}
+
+function pulaLinha() {
+    document.write("<br>")
+}
+function exibeTitulo(titulo) {
+    document.write("<h1>" + titulo + "</h1>")
+}
+function exibeParagrafo(paragrafo){
+    document.write("<p>" + paragrafo + "</p>")
+}
+diferencaAnos = anoAtual - chegadaNoBrasil
+geracoes = diferencaAnos / media
+
+exibeTitulo("O problema das gerações")
+exibeParagrafo("A diferença de 1500 até 2021 é de: " + diferencaAnos + "anos")
+exibeParagrafo("sendo assim, passaram-se " + arredondaPraBaixo(geracoes) + " gerações de 1500 ate 2021")
+
+</script>

@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    
+    function sorteia(n) {
+
+        return Math.round(Math.random() * n);
+    }
+    
+    var numeroAleatorio = sorteia(10)// numero aleatório de 0 a 100
+    console.log(numeroAleatorio);
+    var chute = parseInt(prompt("Chute um numero"));
+   
+    
+    if (chute == numeroAleatorio) {
+        mostra("Parabens, você acertou");
+    } else {
+        mostra("Você errou, o número era " + numeroAleatorio);
+    }
+
+</script>
